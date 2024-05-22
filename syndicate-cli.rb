@@ -5,11 +5,11 @@
 class SyndicateCli < Formula
   desc ""
   homepage "https://github.com/adorigi/syndicate-cli"
-  version "0.1.1"
+  version "0.1.3"
 
   on_macos do
-    url "https://github.com/ADorigi/syndicate-cli/releases/download/0.1.1/syndicate-cli_0.1.1_darwin_all.tar.gz"
-    sha256 "e4e2613747bfbba6933df4e8cf11225e6b5365dbb15332ec16e6e7a197e4cabe"
+    url "https://github.com/ADorigi/syndicate-cli/releases/download/0.1.3/syndicate-cli_0.1.3_darwin_all.tar.gz"
+    sha256 "4fb4a131960f86a4131ab138196b91a6f93e2da4aa7cf633f13898cb79ea7c27"
 
     def install
       bin.install "syndicate-cli"
@@ -17,20 +17,24 @@ class SyndicateCli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/ADorigi/syndicate-cli/releases/download/0.1.1/syndicate-cli_0.1.1_linux_amd64.tar.gz"
-      sha256 "00a8b0f2a6c9353642944c49155413baa7ef5d85892b27b841e1c1f18fb60ce9"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ADorigi/syndicate-cli/releases/download/0.1.3/syndicate-cli_0.1.3_linux_amd64.tar.gz"
+        sha256 "89e8649a14393456d7272f6a7c3c0f7b761c652976c07d2052f7bf158d46e082"
 
-      def install
-        bin.install "syndicate-cli"
+        def install
+          bin.install "syndicate-cli"
+        end
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ADorigi/syndicate-cli/releases/download/0.1.1/syndicate-cli_0.1.1_linux_arm64.tar.gz"
-      sha256 "c47c0041e3112d8471a637170a5f6c7abe61319424074a8bdd868de57de04568"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ADorigi/syndicate-cli/releases/download/0.1.3/syndicate-cli_0.1.3_linux_arm64.tar.gz"
+        sha256 "d491d1c1fce48d60a744f6f9d4c5d370332f6e5187ef72c648378234f7acdae6"
 
-      def install
-        bin.install "syndicate-cli"
+        def install
+          bin.install "syndicate-cli"
+        end
       end
     end
   end
