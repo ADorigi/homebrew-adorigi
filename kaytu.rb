@@ -10,7 +10,7 @@ class Kaytu < Formula
   on_macos do
     on_intel do
       url "https://github.com/adorigi/kaytu/releases/download/v1.0.0/kaytu_1.0.0_darwin_amd64.tar.gz"
-      sha256 "bd748b5e927d147a5f0cc0a294761874798a8f84ee9fbf8a2b746a2b48259235"
+      sha256 "d2609ca74ff702939ad23740be20cfafe0f73de045d6c84a1833fef85ac8f635"
 
       def install
         bin.install "kaytu"
@@ -18,7 +18,7 @@ class Kaytu < Formula
     end
     on_arm do
       url "https://github.com/adorigi/kaytu/releases/download/v1.0.0/kaytu_1.0.0_darwin_arm64.tar.gz"
-      sha256 "b9ac7ac58406c720f0da1d3fafabdaa01641774c807f9cc3eab23d0ecc94c73d"
+      sha256 "6400237e5afe213b77eb9e76e2ca5f2b97dae7934844dad27075d10ec1047ddb"
 
       def install
         bin.install "kaytu"
@@ -30,7 +30,7 @@ class Kaytu < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/adorigi/kaytu/releases/download/v1.0.0/kaytu_1.0.0_linux_amd64.tar.gz"
-        sha256 "4ccb761f66c4b7391220093e76746636c04139972b2f49b234ce2812c12cbeb7"
+        sha256 "0facdaece22485d30ffa2254f85f2c12c47de6ec968fc3a83741d89304bf048c"
 
         def install
           bin.install "kaytu"
@@ -40,7 +40,7 @@ class Kaytu < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/adorigi/kaytu/releases/download/v1.0.0/kaytu_1.0.0_linux_arm64.tar.gz"
-        sha256 "8279d6aade98640bc965c67a8a8ff3046d86ec156a2b6d326b2a0cd4bc7f51da"
+        sha256 "97f50e61dde8a2ddd8be3b33462ad4e022858dcbead182dbc29988cf8a5f387c"
 
         def install
           bin.install "kaytu"
