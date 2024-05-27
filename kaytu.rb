@@ -5,20 +5,20 @@
 class Kaytu < Formula
   desc ""
   homepage "https://github.com/"adorigi"/"kaytu""
-  version "1.0.0"
+  version "2.0.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/adorigi/kaytu/releases/download/v1.0.0/kaytu_1.0.0_darwin_amd64.tar.gz"
-      sha256 "d2609ca74ff702939ad23740be20cfafe0f73de045d6c84a1833fef85ac8f635"
+      url "https://github.com/adorigi/kaytu/releases/download/v2.0.0/kaytu_2.0.0_darwin_amd64.tar.gz"
+      sha256 "dca9f538258e106e014789f19e7d77f6e54ba07b57ba024f7ef2cc5c3367ae62"
 
       def install
         bin.install "kaytu"
       end
     end
     on_arm do
-      url "https://github.com/adorigi/kaytu/releases/download/v1.0.0/kaytu_1.0.0_darwin_arm64.tar.gz"
-      sha256 "6400237e5afe213b77eb9e76e2ca5f2b97dae7934844dad27075d10ec1047ddb"
+      url "https://github.com/adorigi/kaytu/releases/download/v2.0.0/kaytu_2.0.0_darwin_arm64.tar.gz"
+      sha256 "1850d05a0394a916a56c2d171f6a0dfafd90c54e22564030d77a4a470e53cfed"
 
       def install
         bin.install "kaytu"
@@ -29,8 +29,8 @@ class Kaytu < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/adorigi/kaytu/releases/download/v1.0.0/kaytu_1.0.0_linux_amd64.tar.gz"
-        sha256 "0facdaece22485d30ffa2254f85f2c12c47de6ec968fc3a83741d89304bf048c"
+        url "https://github.com/adorigi/kaytu/releases/download/v2.0.0/kaytu_2.0.0_linux_amd64.tar.gz"
+        sha256 "8dccd2c72f6f9ebdccabdb4fcf460cd9e196ff64f92fa2522c5ead24d3f42768"
 
         def install
           bin.install "kaytu"
@@ -39,8 +39,8 @@ class Kaytu < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/adorigi/kaytu/releases/download/v1.0.0/kaytu_1.0.0_linux_arm64.tar.gz"
-        sha256 "97f50e61dde8a2ddd8be3b33462ad4e022858dcbead182dbc29988cf8a5f387c"
+        url "https://github.com/adorigi/kaytu/releases/download/v2.0.0/kaytu_2.0.0_linux_arm64.tar.gz"
+        sha256 "dccd72492151fb730c7c683ad7d7d1f28a532a24fe183ed2e7ab0b97a3d0e4de"
 
         def install
           bin.install "kaytu"
