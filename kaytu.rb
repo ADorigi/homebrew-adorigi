@@ -5,20 +5,20 @@
 class Kaytu < Formula
   desc ""
   homepage "https://github.com/adorigi/kaytu"
-  version "4.3.7"
+  version "4.3.9-linux-packages.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/adorigi/kaytu/releases/download/v4.3.7/kaytu_4.3.7_darwin_amd64.tar.gz"
-      sha256 "a43d8c755dc7e9ab50c6607a160ba3e5ab52bdf90a2f16dbba70fa9193a3ee52"
+      url "https://github.com/adorigi/kaytu/releases/download/v4.3.9-linux-packages.0/kaytu_4.3.9-linux-packages.0_darwin_amd64.tar.gz"
+      sha256 "8164d310f014bba34d286a69c5b875872a376664bd59ef951e7cc7f88f76e564"
 
       def install
         bin.install "kaytu"
       end
     end
     on_arm do
-      url "https://github.com/adorigi/kaytu/releases/download/v4.3.7/kaytu_4.3.7_darwin_arm64.tar.gz"
-      sha256 "32031e9e6748aeb7889b205b64d83cace474dde35c478159a46fc99d751adc19"
+      url "https://github.com/adorigi/kaytu/releases/download/v4.3.9-linux-packages.0/kaytu_4.3.9-linux-packages.0_darwin_arm64.tar.gz"
+      sha256 "feebb1e180731052989a04e9a9456f75d94e6c6f39280f3770e995b094485333"
 
       def install
         bin.install "kaytu"
@@ -29,8 +29,8 @@ class Kaytu < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/adorigi/kaytu/releases/download/v4.3.7/kaytu_4.3.7_linux_amd64.tar.gz"
-        sha256 "e442ddb110ecc4d062cd8e96fd4c1f8766bc85e81b1ba8d16c72cf437ce974c6"
+        url "https://github.com/adorigi/kaytu/releases/download/v4.3.9-linux-packages.0/kaytu_4.3.9-linux-packages.0_linux_amd64.tar.gz"
+        sha256 "b8d7ef0b75918d322960923b4d768ada73b68f60cff1a64bfc4c67527dd06c07"
 
         def install
           bin.install "kaytu"
@@ -39,8 +39,8 @@ class Kaytu < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/adorigi/kaytu/releases/download/v4.3.7/kaytu_4.3.7_linux_arm64.tar.gz"
-        sha256 "e8b3fab6a53ae334296195c7b9f5570b23c33e2f0dc6c7ee5c75ca539727a2dc"
+        url "https://github.com/adorigi/kaytu/releases/download/v4.3.9-linux-packages.0/kaytu_4.3.9-linux-packages.0_linux_arm64.tar.gz"
+        sha256 "7de58f6e46b12d1a797166eced090313422b46ef25ace134f64bb65a1beabb3a"
 
         def install
           bin.install "kaytu"
